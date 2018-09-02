@@ -1,0 +1,24 @@
+{
+  "name": "bs-electron-positioner",
+  "version": "1.0.0",
+  "description": "Bucklescript bindings for electron-positioner",
+  "main": "index.bs.js",
+  "scripts": {
+    "build": "bsb -clean-world -make-world",
+    "watch": "bsb -clean-world -make-world -w",
+    "clean": "bsb -clean-world",
+    "postinstall": "yarn link bs-electron"
+  },
+  "repository": "git@github.com:arnarthor/bs-electron-positioner.git",
+  "author": "Arnar Thor Sveinsson <arnar.th92@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "bs-electron": "*"
+  },
+  "devDependencies": {
+    "bs-platform": "^4.0.5"
+  },
+  "dependencies": {
+    "electron-positioner": "^4.1.0"
+  }
+}
